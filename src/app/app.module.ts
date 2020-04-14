@@ -28,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     RouterModule.forRoot([{
       path:'register',component : RegisterComponent},
       {path:'register-success',component : RegisterSuccessComponent},
+      {path:'login',component : LoginComponent},
     ]),
     HttpClientModule
   ],
