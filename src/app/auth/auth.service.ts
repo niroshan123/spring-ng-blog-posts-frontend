@@ -8,16 +8,13 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  private url:'http://localhost:8080/';
-  constructor(private httpClient:HttpClient) {
+  private url = 'http://localhost:8080/api/auth/';
 
-   }
+  constructor(private httpClient: HttpClient) {
+  }
 
-    register(registerPayload:RegisterPayload):Observable<any>
-    {
-
-      return this.httpClient.post(this.url + "/signup", registerPayload)
-
-    }
+  register(registerPayload: RegisterPayload): Observable<any> {
+    return this.httpClient.post(this.url + 'signup', registerPayload);
+  }
   
 }
