@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { Ng2Webstorage } from 'ngx-webstorage';
 import { HomeComponent } from './home/home.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeComponent } from './home/home.component';
     RegisterComponent,
     LoginComponent,
     RegisterSuccessComponent,
-    HomeComponent
+    HomeComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,8 @@ import { HomeComponent } from './home/home.component';
       path:'register',component : RegisterComponent},
       {path:'register-success',component : RegisterSuccessComponent},
       {path:'login',component : LoginComponent},
+      {path:'home',component : HomeComponent},
+      {path: 'add-post', component: AddPostComponent}
     ]),
     HttpClientModule
   ],
